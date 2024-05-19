@@ -3,7 +3,8 @@ import java.util.Objects;
 /**
  * Iphone
  *
- * @author Andres Arevalo & Nick
+ * @author Andres Arevalo
+ * @author Nick Farrell
  * @version 1.0
  */
 public class IPhone extends IDevice

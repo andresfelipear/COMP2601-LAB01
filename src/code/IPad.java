@@ -3,7 +3,8 @@ import java.util.Objects;
 /**
  * IPad
  *
- * @author Andres Arevalo & Nick
+ * @author Andres Arevalo
+ * @author Nick Farrell
  * @version 1.0
  */
 public class IPad extends IDevice
@@ -38,6 +39,22 @@ public class IPad extends IDevice
     }
 
     /**
+     *
+     * @return "yes" if the device has case otherwise "no".
+     */
+    public String hasCaseDetails()
+    {
+        if(hasCase)
+        {
+            return "yes";
+        }
+        else
+        {
+            return "no";
+        }
+    }
+
+    /**
      * Returns a string representation of this iPad.
      *
      * @return A string representation of the iPad.
@@ -47,7 +64,7 @@ public class IPad extends IDevice
     {
         return super.toString() +
                 "\nOperating System Version: " + versionOS +
-                "\nHas a case? " + (hasCase?"yes": "no");
+                "\nHas a case? " + hasCaseDetails();
     }
 
     /**

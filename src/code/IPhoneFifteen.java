@@ -3,7 +3,8 @@ import java.util.Objects;
 /**
  * IPhoneFifteen of Iphone
  *
- * @author Andres Arevalo & Nick
+ * @author Andres Arevalo
+ * @author Nick Farrell
  * @version 1.0
  */
 public class IPhoneFifteen extends IPhone
@@ -82,8 +83,8 @@ public class IPhoneFifteen extends IPhone
 
         that = (IPhoneFifteen) obj;
 
-        return (hasHighResolutionCamera == that.hasHighResolutionCamera &&
-                super.equals(that));
+        return (this.hasHighResolutionCamera == that.hasHighResolutionCamera &&
+                super.getMinutesRemaining() == that.getMinutesRemaining());
     }
 
     /**

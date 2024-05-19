@@ -3,7 +3,8 @@ import java.util.Objects;
 /**
  * IPod
  *
- * @author Andres Arevalo & Nick
+ * @author Andres Arevalo
+ * @author Nick Farrell
  * @version 1.0
  */
 public class IPod extends IDevice
