@@ -13,18 +13,18 @@ public class IPad extends IDevice
 
     private boolean hasCase;
 
+    private static final String PURPOSE = "learning";
+
     /**
      * Constructs an IPad with a specified purpose, operating system version, and whether it has a case.
      *
-     * @param purpose The purpose of this iPad.
      * @param versionOS The operating system version of this iPad.
      * @param hasCase Whether this iPad has a case.
      */
-    public IPad(final String purpose,
-                final String versionOS,
+    public IPad(final String versionOS,
                 final boolean hasCase)
     {
-        super(purpose);
+        super(PURPOSE);
         this.versionOS = versionOS;
         this.hasCase = hasCase;
     }

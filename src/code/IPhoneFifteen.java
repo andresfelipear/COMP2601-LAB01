@@ -15,20 +15,17 @@ public class IPhoneFifteen extends IPhone
     /**
      * Constructs an IPhoneFifteen with a specified purpose, minutes remaining, carrier, high resolution camera capability, and memory size.
      *
-     * @param purpose The purpose of this iPhone Fifteen.
      * @param minutesRemaining The number of minutes remaining on this iPhone Fifteen.
      * @param carrier The carrier of this iPhone Fifteen.
      * @param hasHighResolutionCamera Whether this iPhone Fifteen has a high resolution camera.
      * @param memorySizeGb The memory size in gigabytes of this iPhone Fifteen.
      */
-    public IPhoneFifteen(final String  purpose,
-                         final double  minutesRemaining,
+    public IPhoneFifteen(final double  minutesRemaining,
                          final String  carrier,
                          final boolean hasHighResolutionCamera,
                          final int     memorySizeGb)
     {
-        super(purpose,
-              minutesRemaining,
+        super(minutesRemaining,
               carrier);
 
         this.hasHighResolutionCamera = hasHighResolutionCamera;

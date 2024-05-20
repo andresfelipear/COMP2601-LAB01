@@ -12,18 +12,18 @@ public class IPhone extends IDevice
     private double minutesRemaining;
     private String carrier;
 
+    private static final String PURPOSE = "talking";
+
     /**
      * Constructs an IPhone with a specified purpose, minutes remaining, and carrier.
      *
-     * @param purpose The purpose of this iPhone.
      * @param minutesRemaining The number of minutes remaining on this iPhone.
      * @param carrier The carrier of this iPhone.
      */
-    public IPhone(final String purpose,
-                  final double minutesRemaining,
+    public IPhone(final double minutesRemaining,
                   final String carrier)
     {
-        super(purpose);
+        super(PURPOSE);
         this.minutesRemaining = minutesRemaining;
         this.carrier = carrier;
     }

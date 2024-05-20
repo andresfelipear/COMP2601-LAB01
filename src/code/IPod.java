@@ -13,18 +13,18 @@ public class IPod extends IDevice
 
     private int songsStored;
 
+    private static final String PURPOSE = "music";
+
     /**
      * Constructs an IPod with a specified purpose, maximum volume in decibels, and number of songs stored.
      *
-     * @param purpose The purpose of this iPod.
      * @param maxVolumeDecibels The maximum volume in decibels for this iPod.
      * @param songsStored The number of songs stored on this iPod.
      */
-    public IPod(final String purpose,
-                final double maxVolumeDecibels,
+    public IPod(final double maxVolumeDecibels,
                 final int songsStored)
     {
-        super(purpose);
+        super(PURPOSE);
         this.maxVolumeDecibels = maxVolumeDecibels;
         this.songsStored = songsStored;
     }
